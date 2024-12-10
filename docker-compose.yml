@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "2023:27017"   # Exponer MongoDB en el puerto 2023 de tu máquina local
+    volumes:
+      - ./data:/data/db  # Persistencia de datos en el directorio ./data
